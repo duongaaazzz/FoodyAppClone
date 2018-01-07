@@ -3,7 +3,7 @@ import {
         View, Text, Image, StyleSheet
 } from 'react-native';
 
-import { LogoHeader, Search } from './';
+import { LogoHeader, Search, QuickSearch } from './';
 
 import { positionCommon } from '../../../common';
 
@@ -17,6 +17,7 @@ class HeaderHome extends Component {
                         <View style={content}>
                                 <LogoHeader style={logoHeaderStyle} />
                                 <Search />
+                                <QuickSearch />
                         </View>
                 );
         }

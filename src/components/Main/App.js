@@ -8,7 +8,7 @@ import { HomeTab } from '../HomeTab';
 export default class App extends Component {
         render() {
                 return (
-                        <View style={{ backgroundColor: 'gray', flex: 1 }}>
+                        <View style={{ backgroundColor: '#bfbfbf', flex: 1 }}>
                                 <StatusBar barStyle="light-content" />
                                 <HomeTab />
                         </View>
