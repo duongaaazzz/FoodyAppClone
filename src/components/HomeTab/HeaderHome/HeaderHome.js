@@ -22,7 +22,7 @@ class HeaderHome extends Component {
 }
 const { width } = Dimensions.get('window');
 
-const heightHeaderConst = width * 1.05;
+const heightHeaderConst = width * 1.1;
 
 const styles = StyleSheet.create({
         content: {

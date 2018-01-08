@@ -26,7 +26,7 @@ class LogoHeader extends Component {
 
 const styles = StyleSheet.create({
         content: {
-                marginTop: 30,
+                marginTop: 25,
                 alignItems: 'center',
         },
         imageStyle: {

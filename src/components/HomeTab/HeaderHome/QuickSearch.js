@@ -13,10 +13,10 @@ class QuickSearch extends Component {
                 } = styles;
                 return (
                         <View style={content}>
-                                <QuickFunction />
-                                <QuickFunction />
-                                <QuickFunction />
-                                <QuickFunction />
+                                <QuickFunction nameSearch={'Discovery'} />
+                                <QuickFunction nameSearch={'Delivery'} />
+                                <QuickFunction nameSearch={'Reservation'} />
+                                <QuickFunction nameSearch={'Self-Order'} />
                         </View>
                 );
         }
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         content: {
                 alignItems: 'center',
                 flexDirection: 'row',
-                marginTop: 15,
+                marginTop: 25,
                 marginBottom: 10,
                 marginLeft: 5,
                 marginRight: 5,

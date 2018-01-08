@@ -13,7 +13,7 @@ class QuickFunction extends Component {
                 return (
                         <View style={content}>
                                 <View style={image} />
-                                <Text style={textNameFunction}>Function</Text>
+                                <Text style={textNameFunction}>{this.props.nameSearch}</Text>
                         </View>
                 );
         }
@@ -31,10 +31,11 @@ const styles = StyleSheet.create({
         image: {
                 width: width / 4.45,
                 height: width / 4.45,
-                backgroundColor: '#99e6e6'
+                backgroundColor: '#99e6e6',
+                marginBottom: 3
         },
         textNameFunction: {
-                fontSize: 13,
+                fontSize: 12,
                 fontWeight: 'bold',
                 alignSelf: 'center'
         }
