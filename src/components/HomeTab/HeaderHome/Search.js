@@ -3,7 +3,7 @@ import {
         TouchableOpacity, View, Text, StyleSheet
 } from 'react-native';
 
-import { positionCommon } from '../../../common';
+import { positionDefault } from '../../../common';
 
 class Search extends Component {
         state = {}
@@ -25,7 +25,7 @@ class Search extends Component {
                                                         justifyContent: 'center',
                                                         borderRightColor: '#cccccc',
                                                         borderRightWidth: 0.5,
-                                                        height: positionCommon.Header.heightSearch - 15
+                                                        height: 25
                                                 }}
                                         >
                                                 <TouchableOpacity
@@ -56,9 +56,9 @@ const styles = StyleSheet.create({
                 alignItems: 'center',
                 justifyContent: 'space-between',
                 flexDirection: 'row',
-                marginLeft: positionCommon.Header.paddingLeftRightSearch,
-                marginRight: positionCommon.Header.paddingLeftRightSearch,
-                height: positionCommon.Header.heightSearch,
+                marginLeft: positionDefault.Header.paddingdefaulf,
+                marginRight: positionDefault.Header.paddingdefaulf,
+                height: 40,
                 shadowColor: 'black',
                 shadowOffset: {
                         width: 1,

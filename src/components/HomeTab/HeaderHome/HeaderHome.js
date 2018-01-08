@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import {
-        View, Text, Image, StyleSheet
+        View, Text, Image, StyleSheet, Dimensions
 } from 'react-native';
 
 import { LogoHeader, Search, QuickSearch } from './';
-
-import { positionCommon } from '../../../common';
 
 class HeaderHome extends Component {
         state = {}
@@ -22,12 +20,15 @@ class HeaderHome extends Component {
                 );
         }
 }
+const { width } = Dimensions.get('window');
+
+const heightHeaderConst = width * 1.05;
 
 const styles = StyleSheet.create({
         content: {
                 alignItems: 'center',
                 backgroundColor: 'white',
-                height: positionCommon.Header.heightHeader
+                height: heightHeaderConst
         },
         logoHeaderStyle: {
 

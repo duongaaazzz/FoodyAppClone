@@ -1,7 +1,7 @@
-import positionCommon from './position';
-import stylesCommon from './styles';
+import positionDefault from './position';
+import stylesDefault from './styles';
 
 export {
-        positionCommon,
-        stylesCommon
+        positionDefault,
+        stylesDefault
 };

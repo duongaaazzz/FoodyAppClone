@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import {
-        Image, View, Text, TouchableOpacity, StyleSheet
+        Image, View, Text, TouchableOpacity, StyleSheet, Dimensions
 } from 'react-native';
-
-import { positionCommon } from '../../../common';
 
 class QuickFunction extends Component {
         state = {}
@@ -21,6 +19,8 @@ class QuickFunction extends Component {
         }
 }
 
+const { width } = Dimensions.get('window');
+
 
 const styles = StyleSheet.create({
         content: {
@@ -29,8 +29,8 @@ const styles = StyleSheet.create({
                 flex: 1,
         },
         image: {
-                width: positionCommon.Header.widthImgQuickFunction,
-                height: positionCommon.Header.widthImgQuickFunction,
+                width: width / 4.45,
+                height: width / 4.45,
                 backgroundColor: '#99e6e6'
         },
         textNameFunction: {

@@ -15,7 +15,9 @@ class LogoHeader extends Component {
                                 <View />
                                 <View style={imageStyle} />
                                 <Text style={textUserName}>Hello 'NameUser'</Text>
-                                <Text style={textStartus}>Login account to have better experience</Text>
+                                <Text style={textStartus}>
+                                        Login account to have better experience
+                                </Text>
                                 <View />
                         </View >
                 );
@@ -41,7 +43,7 @@ const styles = StyleSheet.create({
         textStartus: {
                 fontSize: 12,
                 marginBottom: 30,
-                
+
         }
 });
 
