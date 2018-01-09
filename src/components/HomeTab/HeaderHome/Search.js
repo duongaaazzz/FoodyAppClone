@@ -56,8 +56,8 @@ const styles = StyleSheet.create({
                 alignItems: 'center',
                 justifyContent: 'space-between',
                 flexDirection: 'row',
-                marginLeft: positionDefault.Header.paddingdefaulf,
-                marginRight: positionDefault.Header.paddingdefaulf,
+                marginLeft: positionDefault.paddingdefaulf,
+                marginRight: positionDefault.paddingdefaulf,
                 height: 40,
                 shadowColor: 'black',
                 shadowOffset: {

@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import {
-        View, Text
+        View, Text, ScrollView
 } from 'react-native';
 
-import { HeaderHome } from './';
+import { HeaderHome, Top } from './';
 
 class HomeView extends Component {
         state = {}
         render() {
                 return (
-                        <View>
+                        <ScrollView>
                                 <HeaderHome />
-                        </View>
+                                <Top />
+                        </ScrollView>
                 );
         }
 }

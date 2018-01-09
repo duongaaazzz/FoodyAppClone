@@ -5,9 +5,8 @@ import {
 const { width, height } = Dimensions.get('window');
 
 export default {
-        Header: {
-                paddingdefaulf: 10,
-        },
-
+        paddingdefaulf: 10,
+        margindefault: 5,
+        widthProductDetails: width * 0.45
 };
 
