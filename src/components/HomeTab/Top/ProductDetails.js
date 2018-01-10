@@ -3,30 +3,45 @@ import {
         View, Text, StyleSheet
 } from 'react-native';
 
-import { positionDefault } from '../../common';
+import { positionDefault } from '../../../common';
 
 class ProductDetails extends Component {
-        state = {}
+
         render() {
                 const {
-                        content, image, circelActive, textProductName, textProductAddress
+                        content, image, circelActive, textProductName,
+                        textProductAddress, textDiscount
                 } = styles;
+
+                const ProductActiveNow = this.props.isActive ?
+                        <View style={circelActive} /> : null;
+
                 return (
                         <View style={content}>
                                 <View>
-                                        <View style={image} />
-                                        <View style={circelActive} />
+                                        <View style={image} >
+                                                <View />
+                                                <Text
+                                                        numberOfLines={1}
+                                                        style={textDiscount}
+                                                >
+                                                        giam ??? tong bill (toi da)
+                                                </Text>
+                                        </View>
+
+                                        {ProductActiveNow}
+
                                         <Text
                                                 style={textProductName}
                                                 numberOfLines={1}
                                         >
-                                                An dem SG - Giao Duong
+                                                {this.props.nameProduct}
                                         </Text>
                                         <Text
                                                 style={textProductAddress}
                                                 numberOfLines={1}
                                         >
-                                                An dem SG - Giao Duong
+                                                {this.props.addressProduct}
                                         </Text>
                                 </View>
                         </View>
@@ -35,6 +50,7 @@ class ProductDetails extends Component {
 }
 
 const { widthProductDetails, margindefault } = positionDefault;
+const margindefaultProduct = margindefault / 2;
 
 const styles = StyleSheet.create({
         content: {
@@ -42,14 +58,15 @@ const styles = StyleSheet.create({
                 height: widthProductDetails,
         },
         image: {
+                justifyContent: 'space-between',
                 width: widthProductDetails - margindefault,
                 height: (widthProductDetails * 0.65) - margindefault,
                 backgroundColor: 'gray',
-                margin: margindefault / 2,
+                margin: margindefaultProduct,
                 borderRadius: 8
         },
         contentImg: {
-
+                
         },
         circelActive: {
                 justifyContent: 'center',
@@ -57,8 +74,8 @@ const styles = StyleSheet.create({
                 height: widthProductDetails * 0.1,
                 width: widthProductDetails * 0.1,
                 position: 'absolute',
-                top: margindefault / 2,
-                left: margindefault / 2,
+                top: margindefaultProduct,
+                left: margindefaultProduct,
                 borderRadius: widthProductDetails * 0.05,
                 backgroundColor: 'green',
                 borderWidth: 1,
@@ -67,13 +84,18 @@ const styles = StyleSheet.create({
         textProductName: {
                 fontSize: 15,
                 fontWeight: 'bold',
-                margin: margindefault / 2,
+                margin: margindefaultProduct,
         },
         textProductAddress: {
                 fontSize: 12,
-                margin: margindefault / 2,
-                marginTop: -margindefault / 2,
+                margin: margindefaultProduct,
+                marginTop: -margindefaultProduct,
                 color: 'gray'
+        },
+        textDiscount: {
+                margin: margindefaultProduct,
+                fontSize: 12,
+                color: '#ff3333'
         }
 });
 

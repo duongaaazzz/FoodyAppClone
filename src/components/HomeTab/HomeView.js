@@ -3,7 +3,7 @@ import {
         View, Text, ScrollView
 } from 'react-native';
 
-import { HeaderHome, Top } from './';
+import { HeaderHome, Top, LastActivity } from './';
 
 class HomeView extends Component {
         state = {}
@@ -11,7 +11,10 @@ class HomeView extends Component {
                 return (
                         <ScrollView>
                                 <HeaderHome />
-                                <Top />
+                                <Top topName='Delivery' />
+                                <Top topName='Reservation' />
+                                <Top topName='Self-Order' />
+                                <LastActivity />
                         </ScrollView>
                 );
         }

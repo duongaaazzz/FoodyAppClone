@@ -3,13 +3,13 @@ import {
         View, Text, StyleSheet, ScrollView, Image, TouchableOpacity
 } from 'react-native';
 
-import { ProductDetails } from '.././';
-import { positionDefault, icons } from '../../../common';
+import { Coment } from './';
+import { positionDefault, icons } from '../../common';
 
 
 const isHorizontalScrollView = true;
 
-class Top extends Component {
+class LastActivity extends Component {
         state = {}
         render() {
                 const {
@@ -48,42 +48,42 @@ class Top extends Component {
                                                 horizontal={isHorizontalScrollView}
                                                 style={{ paddingLeft: positionDefault.margindefault }}
                                         >
-                                                <ProductDetails
+                                                <Coment
                                                         nameProduct='Tra sua Gong Cha'
                                                         addressProduct='noi nao do 1'
                                                         isActive={true}
                                                 />
-                                                <ProductDetails
+                                                <Coment
                                                         nameProduct='The Ally - Tra Sua'
                                                         addressProduct='noi nao do 2'
                                                         isActive={false}
                                                 />
-                                                <ProductDetails
+                                                <Coment
                                                         nameProduct='Com Trua Bento'
                                                         addressProduct='noi nao do 3'
                                                         isActive={true}
                                                 />
-                                                <ProductDetails
+                                                <Coment
                                                         nameProduct='Royyaltea Vietname'
                                                         addressProduct='noi nao do 4'
                                                         isActive={false}
                                                 />
-                                                <ProductDetails
+                                                <Coment
                                                         nameProduct='Tra sua Gong Cha'
                                                         addressProduct='noi nao do 5'
                                                         isActive={false}
                                                 />
-                                                <ProductDetails
+                                                <Coment
                                                         nameProduct='Koi Cafe'
                                                         addressProduct='noi nao do 6'
                                                         isActive={true}
                                                 />
-                                                <ProductDetails
+                                                <Coment
                                                         nameProduct='A Hoai - My Y'
                                                         addressProduct='noi nao do 7'
                                                         isActive={false}
                                                 />
-                                                <ProductDetails
+                                                <Coment
                                                         nameProduct='Tra sua Chamichi'
                                                         addressProduct='noi nao do 8'
                                                         isActive={false}
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
         content: {
                 marginTop: positionDefault.margindefault,
                 backgroundColor: 'white',
-                height: 163
+                height: 230
         },
         textTitle: {
                 fontSize: 16,
@@ -114,4 +114,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default Top;
+export default LastActivity;
